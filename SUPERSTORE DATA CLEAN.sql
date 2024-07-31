@@ -12,7 +12,7 @@ alter column OrderId nvarchar(255) not null
 Alter Table EachorderBreakdown
 add constraint fk_orderid foreign key (OrderId) references OrdersList(orderid)
 
---Q2. Split City State Country into 3 individual columns namely ‘City’, ‘State’, ‘Country’.
+--Q2. Split City State Country into 3 individual columns namely â€˜Cityâ€™, â€˜Stateâ€™, â€˜Countryâ€™.
 
 alter table OrdersList 
 add City nvarchar(255),
@@ -31,7 +31,7 @@ select* from OrdersList
 
 --Q3. Add a new Category Column using the following mapping as per the first 3 characters in the Product Name Column:
 --TEC- Technology
---OFS – Office Supplies
+--OFS â€“ Office Supplies
 --FUR - Furniture 
 
 
